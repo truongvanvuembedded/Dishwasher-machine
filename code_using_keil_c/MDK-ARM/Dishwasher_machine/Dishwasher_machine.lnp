@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"dishwasher_machine\startup_stm32f103xb.o"
+"dishwasher_machine\i2c-lcd.o"
+"dishwasher_machine\funtion.o"
+"dishwasher_machine\main.o"
+"dishwasher_machine\stm32f1xx_it.o"
+"dishwasher_machine\stm32f1xx_hal_msp.o"
+"dishwasher_machine\stm32f1xx_hal_gpio_ex.o"
+"dishwasher_machine\stm32f1xx_hal_i2c.o"
+"dishwasher_machine\stm32f1xx_hal.o"
+"dishwasher_machine\stm32f1xx_hal_rcc.o"
+"dishwasher_machine\stm32f1xx_hal_rcc_ex.o"
+"dishwasher_machine\stm32f1xx_hal_gpio.o"
+"dishwasher_machine\stm32f1xx_hal_dma.o"
+"dishwasher_machine\stm32f1xx_hal_cortex.o"
+"dishwasher_machine\stm32f1xx_hal_pwr.o"
+"dishwasher_machine\stm32f1xx_hal_flash.o"
+"dishwasher_machine\stm32f1xx_hal_flash_ex.o"
+"dishwasher_machine\stm32f1xx_hal_exti.o"
+"dishwasher_machine\stm32f1xx_hal_tim.o"
+"dishwasher_machine\stm32f1xx_hal_tim_ex.o"
+"dishwasher_machine\system_stm32f1xx.o"
+--strict --scatter "Dishwasher_machine\Dishwasher_machine.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Dishwasher_machine.map" -o Dishwasher_machine\Dishwasher_machine.axf
